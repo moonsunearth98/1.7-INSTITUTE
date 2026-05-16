@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="1.7 Institute of Dance – Professional dance training for kids, youth, wedding couples and groups in Devanathpur Bajar, Bhadohi. Founder: Rama Sir." />
+  <meta name="keywords" content="dance institute bhadohi, dance classes bhadohi, wedding choreography bhadohi, kids dance bhadohi, rama sir dance, 1.7 institute of dance" />
+  <meta name="author" content="1.7 Institute of Dance" />
+  <meta property="og:title" content="1.7 Institute of Dance – Devanathpur Bajar, Bhadohi" />
+  <meta property="og:description" content="Professional dance training for all ages. Kids, youth, wedding choreography and group performances." />
+  <meta property="og:image" content="assets/logo.jpg" />
+  <meta property="og:type" content="website" />
+  <title>1.7 Institute of Dance | Devanathpur Bajar, Bhadohi</title>
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Rajdhani:wght@400;500;600;700&family=Noto+Sans+Devanagari:wght@400;600;700&display=swap" rel="stylesheet" />
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- ===== FLOATING PARTICLES CANVAS ===== -->
+<canvas id="particles-canvas"></canvas>
+
+<!-- ===== NAVBAR ===== -->
+<nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center gap-2" href="#home">
+      <img src="assets/logo.jpg" alt="1.7 Institute of Dance Logo" class="nav-logo" />
+      <div class="brand-text">
+        <span class="brand-17">1.7</span>
+        <span class="brand-institute">INSTITUTE OF DANCE</span>
+      </div>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="hb-line"></span>
+      <span class="hb-line"></span>
+      <span class="hb-line"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto align-items-center gap-1">
+        <li class="nav-item"><a class="nav-link" href="#home" data-i18n="nav_home">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about" data-i18n="nav_about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#classes" data-i18n="nav_classes">Classes</a></li>
+        <li class="nav-item"><a class="nav-link" href="#achievements" data-i18n="nav_achievements">Achievements</a></li>
+        <li class="nav-item"><a class="nav-link" href="#gallery" data-i18n="nav_gallery">Gallery</a></li>
+        <li class="nav-item"><a class="nav-link" href="#videos" data-i18n="nav_videos">Videos</a></li>
+        <li class="nav-item"><a class="nav-link" href="#location" data-i18n="nav_location">Location</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact" data-i18n="nav_contact">Contact</a></li>
+        <li class="nav-item ms-2">
+          <div class="lang-toggle">
+            <button class="lang-btn active" id="btn-en" onclick="setLanguage('en')">EN</button>
+            <span class="lang-sep">|</span>
+            <button class="lang-btn" id="btn-hi" onclick="setLanguage('hi')">हिंदी</button>
+          </div>
+        </li>
+        <li class="nav-item ms-2 d-flex gap-2 social-nav">
+          <a href="https://www.instagram.com/1.7_institute_of_dance?igsh=MWdreW56aXFpM2toZw==" target="_blank" class="social-icon-nav"><i class="bi bi-instagram"></i></a>
+          <a href="https://youtube.com/@1.7_institute_of_dance?si=mTrXYnb8876J3VPy" target="_blank" class="social-icon-nav yt"><i class="bi bi-youtube"></i></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- ===== HERO SECTION ===== -->
+<section id="home" class="hero-section">
+  <div class="hero-bg-grid"></div>
+  <div class="hero-glow glow-red"></div>
+  <div class="hero-glow glow-gold"></div>
+  <div class="container h-100">
+    <div class="row h-100 align-items-center">
+      <div class="col-lg-7 hero-content">
+        <div class="hero-badge reveal-up" data-i18n="hero_badge">🔥 Bhadohi's Premier Dance Academy</div>
+        <h1 class="hero-title reveal-up delay-1">
+          <span class="title-learn" data-i18n="hero_learn">Learn Dance</span><br/>
+          <span class="title-with">with</span>
+          <span class="title-brand">1.7 <span class="title-outline">INSTITUTE</span></span><br/>
+          <span class="title-of-dance" data-i18n="hero_of_dance">OF DANCE</span>
+        </h1>
+        <p class="hero-sub reveal-up delay-2" data-i18n="hero_sub">Professional dance training for kids, youth, wedding events, and stage performances in Devanathpur Bajar, Bhadohi.</p>
+        <div class="hero-stats reveal-up delay-3">
+          <div class="stat-item">
+            <span class="stat-num">200+</span>
+            <span class="stat-label" data-i18n="stat_students">Students</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <span class="stat-num">50+</span>
+            <span class="stat-label" data-i18n="stat_events">Events</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <span class="stat-num">TV</span>
+            <span class="stat-label" data-i18n="stat_tv">Round Selected</span>
+          </div>
+        </div>
+        <div class="hero-btns reveal-up delay-4">
+          <a href="https://wa.me/917388879416" target="_blank" class="btn-primary-glow">
+            <i class="bi bi-whatsapp"></i>
+            <span data-i18n="btn_whatsapp">Join on WhatsApp</span>
+          </a>
+          <a href="#gallery" class="btn-outline-glow">
+            <i class="bi bi-images"></i>
+            <span data-i18n="btn_gallery">View Gallery</span>
+          </a>
+        </div>
+      </div>
+      <div class="col-lg-5 hero-visual reveal-right delay-2">
+        <div class="hero-logo-ring">
+          <div class="ring ring-1"></div>
+          <div class="ring ring-2"></div>
+          <div class="ring ring-3"></div>
+          <img src="assets/logo.jpg" alt="1.7 Institute of Dance" class="hero-logo-img" />
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="hero-scroll-indicator">
+    <span data-i18n="scroll_down">Scroll Down</span>
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+<!-- ===== ABOUT SECTION ===== -->
+<section id="about" class="section-pad">
+  <div class="container">
+    <div class="row align-items-center g-5">
+      <div class="col-lg-5 reveal-left">
+        <div class="about-img-wrap">
+          <div class="about-img-border"></div>
+          <img src="assets/logo.jpg" alt="Rama Sir – Founder of 1.7 Institute of Dance" class="about-img" loading="lazy" />
+          <div class="about-founder-card">
+            <span class="founder-title" data-i18n="about_founder_label">Founder & Teacher</span>
+            <span class="founder-name">Rama Sir</span>
+            <a href="tel:7388879416" class="founder-phone"><i class="bi bi-telephone-fill"></i> 7388879416</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-7 reveal-right">
+        <div class="section-tag" data-i18n="about_tag">About Us</div>
+        <h2 class="section-title" data-i18n="about_title">Where Passion<br/><span class="gold-text">Meets Performance</span></h2>
+        <p class="section-body" data-i18n="about_p1">1.7 Institute of Dance is a professional dance training institute founded by <strong>Rama Sir</strong> in Devanathpur Bajar, Bhadohi. We believe every student has a unique rhythm waiting to be discovered.</p>
+        <p class="section-body" data-i18n="about_p2">Our training builds confidence, stage presence, discipline, and creativity. Students are trained for competitions, school events, wedding choreography, and all styles of solo, duet, trio, and group performances.</p>
+        <div class="about-features">
+          <div class="feat-item reveal-up"><i class="bi bi-star-fill text-gold"></i> <span data-i18n="feat1">Competition-level Training</span></div>
+          <div class="feat-item reveal-up delay-1"><i class="bi bi-star-fill text-gold"></i> <span data-i18n="feat2">All Age Groups Welcome</span></div>
+          <div class="feat-item reveal-up delay-2"><i class="bi bi-star-fill text-gold"></i> <span data-i18n="feat3">TV Show & Audition Prep</span></div>
+          <div class="feat-item reveal-up delay-3"><i class="bi bi-star-fill text-gold"></i> <span data-i18n="feat4">Wedding Choreography Expert</span></div>
+        </div>
+        <a href="https://wa.me/917388879416" target="_blank" class="btn-primary-glow mt-4">
+          <i class="bi bi-whatsapp"></i> <span data-i18n="btn_contact_now">Contact Now</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CLASSES SECTION ===== -->
+<section id="classes" class="section-pad section-dark">
+  <div class="container">
+    <div class="text-center mb-5">
+      <div class="section-tag mx-auto" data-i18n="classes_tag">Our Classes</div>
+      <h2 class="section-title" data-i18n="classes_title">What We <span class="gold-text">Teach</span></h2>
+      <p class="section-sub" data-i18n="classes_sub">From toddlers to wedding couples – we train everyone with passion.</p>
+    </div>
+    <div class="row g-4">
+
+      <div class="col-md-6 col-lg-3 reveal-up">
+        <div class="class-card">
+          <div class="class-icon"><i class="bi bi-emoji-smile"></i></div>
+          <h5 data-i18n="class1_title">Kids Dance Classes</h5>
+          <p data-i18n="class1_desc">Fun & energetic training for children building confidence and rhythm from a young age.</p>
+          <div class="card-glow"></div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-3 reveal-up delay-1">
+        <div class="class-card featured-card">
+          <div class="featured-tag" data-i18n="popular">Popular</div>
+          <div class="class-icon"><i class="bi bi-hearts"></i></div>
+          <h5 data-i18n="class2_title">Wedding Choreography</h5>
+          <p data-i18n="class2_desc">Make your wedding unforgettable. Special training for bride, groom & family dance.</p>
+          <div class="card-glow red-glow"></div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-3 reveal-up delay-2">
+        <div class="class-card">
+          <div class="class-icon"><i class="bi bi-person-standing"></i></div>
+          <h5 data-i18n="class3_title">Solo Performance</h5>
+          <p data-i18n="class3_desc">Personal coaching for stage-ready solo performances at competitions and events.</p>
+          <div class="card-glow"></div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-3 reveal-up delay-3">
+        <div class="class-card">
+          <div class="class-icon"><i class="bi bi-people-fill"></i></div>
+          <h5 data-i18n="class4_title">Duet / Couple Dance</h5>
+          <p data-i18n="class4_desc">Beautiful sync and chemistry-based choreography for duo & couple performances.</p>
+          <div class="card-glow"></div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-3 reveal-up">
+        <div class="class-card">
+          <div class="class-icon"><i class="bi bi-grid-3x3-gap-fill"></i></div>
+          <h5 data-i18n="class5_title">Trio / Group Dance</h5>
+          <p data-i18n="class5_desc">High-energy group choreography that commands the stage with perfect sync.</p>
+          <div class="card-glow"></div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-3 reveal-up delay-1">
+        <div class="class-card">
+          <div class="class-icon"><i class="bi bi-lightning-charge-fill"></i></div>
+          <h5 data-i18n="class6_title">Stage Performance</h5>
+          <p data-i18n="class6_desc">Professional stage prep including expressions, lighting, and crowd engagement.</p>
+          <div class="card-glow"></div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-3 reveal-up delay-2">
+        <div class="class-card featured-card">
+          <div class="featured-tag gold-tag" data-i18n="tv_ready">TV Ready</div>
+          <div class="class-icon"><i class="bi bi-trophy-fill"></i></div>
+          <h5 data-i18n="class7_title">Competition Training</h5>
+          <p data-i18n="class7_desc">Audition-level coaching to prepare students for dance reality shows & contests.</p>
+          <div class="card-glow red-glow"></div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-3 reveal-up delay-3">
+        <div class="class-card">
+          <div class="class-icon"><i class="bi bi-music-note-beamed"></i></div>
+          <h5 data-i18n="class8_title">All Dance Styles</h5>
+          <p data-i18n="class8_desc">Bollywood, Hip-Hop, Classical, Semi-Classical, Folk and freestyle – all under one roof.</p>
+          <div class="card-glow"></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== ACHIEVEMENTS SECTION ===== -->
+<section id="achievements" class="section-pad">
+  <div class="container">
+    <div class="text-center mb-5">
+      <div class="section-tag mx-auto" data-i18n="achieve_tag">Achievements</div>
+      <h2 class="section-title" data-i18n="achieve_title">Our <span class="gold-text">Pride & Glory</span></h2>
+      <p class="section-sub" data-i18n="achieve_sub">Years of hard work, sweat and passion – turned into victories.</p>
+    </div>
+    <div class="row g-4">
+
+      <div class="col-md-6 col-lg-4 reveal-up">
+        <div class="achieve-card">
+          <div class="achieve-icon-wrap tv-icon">
+            <i class="bi bi-tv-fill"></i>
+          </div>
+          <h5 data-i18n="ach1_title">TV Round Selection</h5>
+          <p data-i18n="ach1_desc">The 1.7 Crew was selected for the TV Round of India's Dance Idol Season 3 – a major national dance reality show. A proud milestone for our institute!</p>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4 reveal-up delay-1">
+        <div class="achieve-card">
+          <div class="achieve-icon-wrap cert-icon">
+            <i class="bi bi-award-fill"></i>
+          </div>
+          <h5 data-i18n="ach2_title">Certificates & Medals</h5>
+          <p data-i18n="ach2_desc">Students have won multiple certificates and medals at state and district level dance competitions, showcasing the quality of training at 1.7 Institute.</p>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4 reveal-up delay-2">
+        <div class="achieve-card">
+          <div class="achieve-icon-wrap trophy-icon">
+            <i class="bi bi-trophy-fill"></i>
+          </div>
+          <h5 data-i18n="ach3_title">Group Trophies Won</h5>
+          <p data-i18n="ach3_desc">Our group teams have claimed trophies and top positions at multiple inter-school and open competitions across the region.</p>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4 reveal-up">
+        <div class="achieve-card">
+          <div class="achieve-icon-wrap police-icon">
+            <i class="bi bi-shield-fill-check"></i>
+          </div>
+          <h5 data-i18n="ach4_title">Superintendent Recognition</h5>
+          <p data-i18n="ach4_desc">Students were recognized and honored at the Superintendent of Police office, Bhadohi – a proud recognition of our talent and discipline.</p>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4 reveal-up delay-1">
+        <div class="achieve-card">
+          <div class="achieve-icon-wrap stage-icon">
+            <i class="bi bi-camera-reels-fill"></i>
+          </div>
+          <h5 data-i18n="ach5_title">Stage Performances</h5>
+          <p data-i18n="ach5_desc">Dozens of successful stage performances at public events, school functions, and community programs across Bhadohi and neighboring districts.</p>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4 reveal-up delay-2">
+        <div class="achieve-card">
+          <div class="achieve-icon-wrap idol-icon">
+            <i class="bi bi-star-fill"></i>
+          </div>
+          <h5 data-i18n="ach6_title">India's Dance Idol Ready</h5>
+          <p data-i18n="ach6_desc">Our students are trained to national competition standards – audition-ready for TV shows, talent hunts and dance reality programs across India.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== GALLERY SECTION ===== -->
+<section id="gallery" class="section-pad section-dark">
+  <div class="container">
+    <div class="text-center mb-5">
+      <div class="section-tag mx-auto" data-i18n="gallery_tag">Gallery</div>
+      <h2 class="section-title" data-i18n="gallery_title">Moments That <span class="gold-text">Inspire</span></h2>
+      <p class="section-sub" data-i18n="gallery_sub">Our journey in pictures – sweat, glory, smiles and dance.</p>
+    </div>
+    <div class="row g-3" id="galleryGrid">
+
+      <div class="col-6 col-md-4 col-lg-4 reveal-up gallery-item" data-cat="logo">
+        <div class="gallery-card" onclick="openLightbox(0)">
+          <img src="assets/logo.jpg" alt="1.7 Institute of Dance Logo" loading="lazy" />
+          <div class="gallery-overlay">
+            <i class="bi bi-zoom-in"></i>
+            <span data-i18n="gal_logo">Institute Logo</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-4 col-lg-4 reveal-up delay-1 gallery-item" data-cat="certificate">
+        <div class="gallery-card" onclick="openLightbox(1)">
+          <img src="assets/stage-certificate.jpg" alt="Certificate ceremony at 1.7 Institute of Dance" loading="lazy" />
+          <div class="gallery-overlay">
+            <i class="bi bi-zoom-in"></i>
+            <span data-i18n="gal_cert">Certificate Ceremony</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-4 col-lg-4 reveal-up delay-2 gallery-item" data-cat="recognition">
+        <div class="gallery-card" onclick="openLightbox(2)">
+          <img src="assets/office-recognition.jpg" alt="Police Superintendent office recognition – Bhadohi" loading="lazy" />
+          <div class="gallery-overlay">
+            <i class="bi bi-zoom-in"></i>
+            <span data-i18n="gal_police">SP Office Recognition</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-4 col-lg-4 reveal-up gallery-item" data-cat="trophy">
+        <div class="gallery-card" onclick="openLightbox(3)">
+          <img src="assets/trophy-winners.jpg" alt="Trophy and medal winners at 1.7 Institute of Dance" loading="lazy" />
+          <div class="gallery-overlay">
+            <i class="bi bi-zoom-in"></i>
+            <span data-i18n="gal_trophy">Trophy Winners</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-4 col-lg-4 reveal-up delay-1 gallery-item" data-cat="tv">
+        <div class="gallery-card" onclick="openLightbox(4)">
+          <img src="assets/tv-selection.jpg" alt="1.7 Crew selected for TV Round – India's Dance Idol" loading="lazy" />
+          <div class="gallery-overlay">
+            <i class="bi bi-zoom-in"></i>
+            <span data-i18n="gal_tv">TV Round Selection</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-4 col-lg-4 reveal-up delay-2 gallery-item" data-cat="wedding">
+        <div class="gallery-card" onclick="openLightbox(5)">
+          <img src="assets/wedding-choreography.jpg" alt="Wedding dance choreography by 1.7 Institute of Dance" loading="lazy" />
+          <div class="gallery-overlay">
+            <i class="bi bi-zoom-in"></i>
+            <span data-i18n="gal_wedding">Wedding Choreography</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== LIGHTBOX ===== -->
+<div id="lightbox" class="lightbox" onclick="closeLightbox()">
+  <button class="lightbox-close" onclick="closeLightbox()"><i class="bi bi-x-lg"></i></button>
+  <button class="lightbox-prev" onclick="event.stopPropagation(); changeLightbox(-1)"><i class="bi bi-chevron-left"></i></button>
+  <img id="lightbox-img" src="" alt="Gallery Preview" />
+  <button class="lightbox-next" onclick="event.stopPropagation(); changeLightbox(1)"><i class="bi bi-chevron-right"></i></button>
+</div>
+
+<!-- ===== VIDEOS SECTION ===== -->
+<section id="videos" class="section-pad">
+  <div class="container">
+    <div class="text-center mb-5">
+      <div class="section-tag mx-auto" data-i18n="videos_tag">Videos</div>
+      <h2 class="section-title" data-i18n="videos_title">Watch Us <span class="gold-text">Perform</span></h2>
+      <p class="section-sub" data-i18n="videos_sub">See the energy, passion and skill of our students in action.</p>
+    </div>
+    <div class="row g-4 mb-4">
+
+      <!-- Video 1: Thumbnail click-to-watch (embedding disabled on YouTube) -->
+      <div class="col-md-6 col-lg-4 reveal-up">
+        <div class="video-card">
+          <a class="yt-thumb-card" href="https://youtu.be/qM1nQ_-DdbQ" target="_blank" aria-label="Watch Group Performance Video on YouTube">
+            <img src="https://img.youtube.com/vi/qM1nQ_-DdbQ/hqdefault.jpg" alt="Group Performance – 1.7 Institute of Dance" loading="lazy" />
+            <div class="yt-thumb-overlay">
+              <div class="yt-play-btn"><i class="bi bi-play-fill"></i></div>
+              <span class="yt-watch-label">Watch on YouTube</span>
+            </div>
+          </a>
+          <div class="video-info">
+            <p data-i18n="vid1_label">Group Performance Video</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Video 2: Thumbnail click-to-watch (embedding disabled on YouTube) -->
+      <div class="col-md-6 col-lg-4 reveal-up delay-1">
+        <div class="video-card">
+          <a class="yt-thumb-card" href="https://youtu.be/_PgP34yMGRM" target="_blank" aria-label="Watch Wedding Choreography Reel on YouTube">
+            <img src="https://img.youtube.com/vi/_PgP34yMGRM/hqdefault.jpg" alt="Wedding Choreography – 1.7 Institute of Dance" loading="lazy" />
+            <div class="yt-thumb-overlay">
+              <div class="yt-play-btn"><i class="bi bi-play-fill"></i></div>
+              <span class="yt-watch-label">Watch on YouTube</span>
+            </div>
+          </a>
+          <div class="video-info">
+            <p data-i18n="vid2_label">Wedding Choreography Reel</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Video 3: Direct embed (embedding enabled) -->
+      <div class="col-md-6 col-lg-4 reveal-up delay-2">
+        <div class="video-card">
+          <div class="video-embed-wrap">
+            <iframe
+              src="https://www.youtube.com/embed/oS0oc_ZVqcE"
+              title="Kids Performance – 1.7 Institute of Dance"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+              loading="lazy">
+            </iframe>
+          </div>
+          <div class="video-info">
+            <p data-i18n="vid3_label">Kids Performance Highlight</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="text-center reveal-up">
+      <a href="https://youtube.com/@1.7_institute_of_dance?si=mTrXYnb8876J3VPy" target="_blank" class="btn-yt-channel">
+        <i class="bi bi-youtube"></i>
+        <span data-i18n="btn_yt">Visit Our YouTube Channel</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== LOCATION SECTION ===== -->
+<section id="location" class="section-pad section-dark">
+  <div class="container">
+    <div class="text-center mb-5">
+      <div class="section-tag mx-auto" data-i18n="loc_tag">Location</div>
+      <h2 class="section-title" data-i18n="loc_title">Find <span class="gold-text">Us Here</span></h2>
+      <p class="section-sub">
+        <i class="bi bi-geo-alt-fill text-gold"></i>
+        <span data-i18n="loc_address"> 1.7 Institute of Dance, Devanathpur Bajar, Bhadohi</span>
+      </p>
+    </div>
+    <div class="map-wrapper reveal-up">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9047.118413339389!2d82.50306743151324!3d25.362264888556084!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x398fe72d0e2138f5%3A0x3d517a3431192aa3!2sD%20J%20MAURYA%20BALIKA%20INTER%20COLLEGE%20LAXMANPATTI%2CBHADOHI!5e0!3m2!1sen!2sin!4v1778911541071!5m2!1sen!2sin"
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        title="1.7 Institute of Dance Location Map">
+      </iframe>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CONTACT SECTION ===== -->
+<section id="contact" class="section-pad">
+  <div class="container">
+    <div class="text-center mb-5">
+      <div class="section-tag mx-auto" data-i18n="contact_tag">Contact Us</div>
+      <h2 class="section-title" data-i18n="contact_title">Get In <span class="gold-text">Touch</span></h2>
+      <p class="section-sub" data-i18n="contact_sub">Ready to dance? Reach us on any platform – we're always available!</p>
+    </div>
+    <div class="row g-4 justify-content-center">
+
+      <div class="col-6 col-md-4 col-lg-2 reveal-up">
+        <a href="https://wa.me/917388879416" target="_blank" class="contact-card whatsapp-card">
+          <div class="contact-icon"><i class="bi bi-whatsapp"></i></div>
+          <span data-i18n="contact_wa">WhatsApp</span>
+        </a>
+      </div>
+
+      <div class="col-6 col-md-4 col-lg-2 reveal-up delay-1">
+        <a href="tel:7388879416" class="contact-card call-card">
+          <div class="contact-icon"><i class="bi bi-telephone-fill"></i></div>
+          <span data-i18n="contact_call">Call Us</span>
+        </a>
+      </div>
+
+      <div class="col-6 col-md-4 col-lg-2 reveal-up delay-2">
+        <a href="https://www.instagram.com/1.7_institute_of_dance?igsh=MWdreW56aXFpM2toZw==" target="_blank" class="contact-card insta-card">
+          <div class="contact-icon"><i class="bi bi-instagram"></i></div>
+          <span>Instagram</span>
+        </a>
+      </div>
+
+      <div class="col-6 col-md-4 col-lg-2 reveal-up delay-3">
+        <a href="https://youtube.com/@1.7_institute_of_dance?si=mTrXYnb8876J3VPy" target="_blank" class="contact-card yt-card">
+          <div class="contact-icon"><i class="bi bi-youtube"></i></div>
+          <span>YouTube</span>
+        </a>
+      </div>
+
+      <div class="col-6 col-md-4 col-lg-2 reveal-up delay-4">
+        <a href="https://www.facebook.com/rama.shankargautam2?mibextid=ZbWKwL" target="_blank" class="contact-card fb-card">
+          <div class="contact-icon"><i class="bi bi-facebook"></i></div>
+          <span>Facebook</span>
+        </a>
+      </div>
+
+    </div>
+
+    <!-- Contact Info Strip -->
+    <div class="contact-info-strip reveal-up mt-5">
+      <div class="cinfo-item">
+        <i class="bi bi-telephone-fill text-gold"></i>
+        <div>
+          <span class="cinfo-label" data-i18n="cinfo_phone">Phone / WhatsApp</span>
+          <a href="tel:7388879416" class="cinfo-value">7388879416</a>
+        </div>
+      </div>
+      <div class="cinfo-divider"></div>
+      <div class="cinfo-item">
+        <i class="bi bi-geo-alt-fill text-gold"></i>
+        <div>
+          <span class="cinfo-label" data-i18n="cinfo_addr">Address</span>
+          <span class="cinfo-value" data-i18n="cinfo_addr_val">Devanathpur Bajar, Bhadohi</span>
+        </div>
+      </div>
+      <div class="cinfo-divider"></div>
+      <div class="cinfo-item">
+        <i class="bi bi-person-fill text-gold"></i>
+        <div>
+          <span class="cinfo-label" data-i18n="cinfo_founder">Founder</span>
+          <span class="cinfo-value">Rama Sir</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+  <div class="footer-glow"></div>
+  <div class="container">
+    <div class="row g-4 align-items-center">
+      <div class="col-md-4 text-center text-md-start">
+        <img src="assets/logo.jpg" alt="1.7 Institute of Dance" class="footer-logo" />
+        <div class="footer-brand">1.7 Institute of Dance</div>
+        <div class="footer-location"><i class="bi bi-geo-alt-fill"></i> Devanathpur Bajar, Bhadohi</div>
+      </div>
+      <div class="col-md-4 text-center">
+        <div class="footer-tagline">
+          <span class="ft-word ft-dance">Dance</span>
+          <span class="ft-dot">•</span>
+          <span class="ft-word ft-conf">Confidence</span>
+          <span class="ft-dot">•</span>
+          <span class="ft-word ft-perf">Performance</span>
+        </div>
+        <div class="footer-socials">
+          <a href="https://www.instagram.com/1.7_institute_of_dance?igsh=MWdreW56aXFpM2toZw==" target="_blank" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+          <a href="https://youtube.com/@1.7_institute_of_dance?si=mTrXYnb8876J3VPy" target="_blank" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+          <a href="https://www.facebook.com/rama.shankargautam2?mibextid=ZbWKwL" target="_blank" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+          <a href="https://wa.me/917388879416" target="_blank" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+        </div>
+      </div>
+      <div class="col-md-4 text-center text-md-end">
+        <div class="footer-links">
+          <a href="#home" data-i18n="nav_home">Home</a>
+          <a href="#about" data-i18n="nav_about">About</a>
+          <a href="#classes" data-i18n="nav_classes">Classes</a>
+          <a href="#gallery" data-i18n="nav_gallery">Gallery</a>
+          <a href="#contact" data-i18n="nav_contact">Contact</a>
+        </div>
+        <div class="footer-phone">
+          <a href="tel:7388879416"><i class="bi bi-telephone-fill"></i> 7388879416</a>
+        </div>
+      </div>
+    </div>
+    <hr class="footer-hr" />
+    <div class="footer-copy text-center">
+      <span>© 2025 1.7 Institute of Dance. All Rights Reserved. | Designed with ❤️ for Bhadohi</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ===== FLOATING WHATSAPP ===== -->
+<a href="https://wa.me/917388879416" target="_blank" class="float-wa" aria-label="Chat on WhatsApp">
+  <i class="bi bi-whatsapp"></i>
+  <span class="wa-tooltip" data-i18n="wa_tooltip">Chat with us!</span>
+</a>
+
+<!-- ===== BACK TO TOP ===== -->
+<button id="backToTop" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Back to top">
+  <i class="bi bi-arrow-up-short"></i>
+</button>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Custom JS -->
+<script src="script.js"></script>
+</body>
+</html>
